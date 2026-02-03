@@ -1,0 +1,17 @@
+{
+  "name": "task-63-1-static-cookies-jwt",
+  "version": "1.0.0",
+  "description": "DZ 63.1 - Static files (favicon), cookies (theme) and JWT auth in Express",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "pug": "^3.0.2"
+  }
+}
