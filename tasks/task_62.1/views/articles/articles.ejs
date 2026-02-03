@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="container">
+    <h1>
+      <%= title %>
+    </h1>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/users">Users</a>
+      <a href="/articles">Articles</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p class="page-note">List of articles rendered with EJS.</p>
+
+    <ul class="list">
+      <% articles.forEach((a)=> { %>
+        <li class="list-item">
+          <a href="/articles/<%= a.id %>">
+            <%= a.title %>
+          </a>
+          <div class="muted">
+            <%= a.description %>
+          </div>
+        </li>
+        <% }) %>
+    </ul>
+  </main>
+
+  <footer class="container footer">
+    <p>Made for homework 62.1</p>
+  </footer>
+</body>
+
+</html>

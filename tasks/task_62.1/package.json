@@ -1,0 +1,15 @@
+{
+  "name": "task-62-1-express-templates",
+  "version": "1.0.0",
+  "description": "DZ 62.1 - Express server with PUG (users) and EJS (articles) templates + CSS",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "pug": "^3.0.2",
+    "ejs": "^3.1.10"
+  }
+}

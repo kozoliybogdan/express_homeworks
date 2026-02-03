@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= title
+    link(rel="stylesheet" href="/styles.css")
+  body
+    header.container
+      h1= title
+      nav.nav
+        a(href="/") Home
+        a(href="/users") Users
+        a(href="/articles") Articles
+
+    main.container
+      p.page-note List of users rendered with PUG.
+      ul.list
+        each u in users
+          li.list-item
+            a(href=`/users/${u.id}`)= `${u.name} (${u.email})`
+
+    footer.container.footer
+      p Made for homework 62.1
