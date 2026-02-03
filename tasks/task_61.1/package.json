@@ -1,0 +1,13 @@
+{
+  "name": "task-61-1-express-middlewares",
+  "version": "1.0.0",
+  "description": "DZ 61.1 - Express server extended with middlewares (logging, auth, validation, sessions, error handling)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}
