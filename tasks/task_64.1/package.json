@@ -1,0 +1,18 @@
+{
+  "name": "task-64-1-passport-auth",
+  "version": "1.0.0",
+  "description": "DZ 64.1 - Express server updated with Passport local auth (sessions)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "pug": "^3.0.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
