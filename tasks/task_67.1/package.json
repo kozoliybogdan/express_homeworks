@@ -1,0 +1,21 @@
+{
+  "name": "task-66-1-mongodb-crud",
+  "version": "1.0.0",
+  "description": "DZ 66.1 - Express + Passport (sessions) with MongoDB Atlas CRUD API for articles",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.10.0",
+    "pug": "^3.0.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}

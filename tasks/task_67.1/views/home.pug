@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= title
+    link(rel="icon" href="/favicon.ico")
+    link(rel="stylesheet" href="/styles.css")
+  body(class=`theme-${theme}`)
+    header.container
+      h1= title
+      nav.nav
+        a(href="/") Home
+        a(href="/users") Users
+        a(href="/articles") Articles
+        a(href="/protected") Protected
+        a(href="/auth") Auth
+
+    main.container
+      section.card
+        h2 Quick actions
+        p
+          | Theme:
+          strong(style="margin-left:6px") #{theme}
+
+        .theme-actions
+          a.btn.theme-link(href="/theme/set?theme=dark") Dark
+          a.btn.theme-link(href="/theme/set?theme=light") Light
+
+      section.card
+        h2 Auth
+        if user
+          p Logged in as #{user.email}
+          form(method="post" action="/auth/logout")
+            button.btn(type="submit") Logout
+        else
+          p You are not logged in.
+          p Use API routes:
+          ul
+            li POST /auth/register (email, password)
+            li POST /auth/login (email, password)
+          p
+            | After login, open
+            a(href="/protected")  /protected
+            |  to check session access.
